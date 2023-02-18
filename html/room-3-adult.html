@@ -44,15 +44,42 @@
                 </picture>
             </div>
             <div class="room-photos-slider">
-                    <ul class="photos-list list">
-                    <li><img 
-                        srcset="../img/sink-mob.jpg 1x, ../img/sink-mob-2x.jpg 2x"
-                        src="../img/sink-mob.jpg" alt="picture phone-layers" width="194" height="194"></li>
-                    <li><img 
-                        srcset="../img/tea-windowsill-mob.jpg 1x, ../img/tea-windowsill-mob-2x.jpg 2x"
-                        src="../img/tea-windowsill-mob.jpg" alt="picture phone-hand" width="194" height="194"></li>
+                <ul class="photos-list list">
+                <li>
+                    <picture class="slider-photos">
+                        <source
+                            srcset="../img/sink-mob.jpg 1x, ../img/sink-mob-2x.jpg 2x"
+                            media="(min-width: 414px)"
+                        />
+                        <source
+                            srcset="../img/sink-tab.jpg 1x, ../img/sink-tab-2x.jpg 2x"
+                            media="(min-width: 1024px)"
+                        />
+                        <source
+                            srcset="../img/sink.jpg 1x, ../img/sink-2x.jpg 2x"
+                            media="(min-width: 1280px)"
+                        />
+                            <img src="../img/sink-mob.jpg" alt="picture phone-layers" width="254" height="254">
+                    </picture>
+                </li>
+                <li>
+                    <picture class="slider-photos">
+                        <source
+                            srcset="../img/tea-windowsill-mob.jpg 1x, ../img/tea-windowsill-mob-2x.jpg 2x"
+                            media="(min-width: 414px)"
+                        />
+                        <source
+                            srcset="../img/tea-windowsill-tab.jpg 1x, ../img/tea-windowsill-tab-2x.jpg 2x"
+                            media="(min-width: 1024px)"
+                        />
+                        <source
+                            srcset="../img/tea-windowsill.jpg 1x, ../img/tea-windowsill-2x.jpg 2x"
+                            media="(min-width: 1280px)"
+                        />
+                            <img src="../img/tea-windowsill-mob.jpg" alt="picture phone-hand" width="254" height="254">
+                    </picture>
+                </li>
                 </ul>
-            </div>
             <div class="arrows">
                 <ul class="arrow-list list">
                     <li>
@@ -71,6 +98,8 @@
                     </li>
                 </ul>
             </div>
+        </div>
+
             <div class="buttons">
                 <ul class="button-list list">
                     <li>
